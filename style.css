@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin: 80px 10px 80px 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.hero{
+    display: flex;
+    background-color: azure;
+    flex-direction: column;
+    padding: 2cm 2cm 2cm 2cm;
+    align-items:center ;
+}
+
+.hero img {
+    margin-right: 0px;
+    border: 8px solid white;
+    transform: translateY(24px);
+    margin-bottom: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width:576px){
+    .container{
+        margin: 80px 200px 80px 200px;
+    }
+    .hero{
+        flex-direction: row;
+        padding: 2em 5em 2em 5em;
+        justify-content: flex-start;
+    }
+    .hero img{
+        transform: translateY(50px);
+        margin-bottom: 0px;
+        margin-right: 50px;
+    }
+}
